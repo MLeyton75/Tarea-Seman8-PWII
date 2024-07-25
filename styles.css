@@ -1,0 +1,320 @@
+/* Estilo global del cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente principal */
+    background: url('images/Fondo.jpg') no-repeat center center fixed; /* Fondo de pantalla con imagen fija centrada */
+    background-color: #f4f4f9; /* Color de fondo de respaldo */
+    color:black; /* Color de texto principal */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    align-items: center; /* Alinear elementos al centro horizontalmente */
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-container {
+    text-align: center; /* Texto centrado */
+    margin-top: 20px; /* Margen superior */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo de los campos de entrada de texto y fecha */
+input[type="text"],input[type="password"], input[type="date"], input[type="number"], input[type="email"] {
+    padding: 10px; /* Espaciado interno */
+    margin: 5px; /* Margen externo */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 300px; /* Ancho fijo */
+    height: 10px; /* Altura del campo de selección */
+    font-size: 16px; /* Tamaño de fuente */
+    background: #f0f0f0; /* Fondo gris claro */
+    
+
+}
+/* Estilo de los botones de envío y limpiar */
+button[type="submit"], button[type="button"] {
+    padding: 5px; /* Espaciado interno */
+    margin: 5px; /* Margen externo */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 150px; /* Ancho fijo */
+    font-size: 16px; /* Tamaño de fuente */
+    text-align: center /* Alinear texto a la izquierda */
+    
+    
+}
+
+/* Estilo del botón de envío */
+button[type="submit"] {
+    /* Estilos adicionales específicos para el botón de envío */
+    background: #4CAF50; /* Fondo verde */
+    color: white; /* Color de texto blanco */
+    height: 30px; /* Altura del campo de selección */
+    
+}
+button[type="button"] {
+    /* Estilos adicionales específicos para el botón de limpiar */
+    background: #c96f08; /* Fondo rojo */
+    color: white; /* Color de texto blanco */
+    height: 30px; /* Altura del campo de selección */
+}
+
+/* Contenedor de notificaciones */
+#notifications-container {
+    text-align: center; /* Texto centrado */
+    margin-top: 20px; /* Margen superior */
+    color: green; /* Color de texto verde */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    background-color: #e9ffe8; /* Color de fondo verde claro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #28a745; /* Borde verde */
+}
+
+/* Estilos adicionales para el formulario de filtro */
+.filter-form {
+    text-align: center; /* Texto centrado */
+    margin-top: 20px; /* Margen superior */
+}
+
+.filter-form label, .filter-form select, .filter-form input {
+    margin: 10px; /* Margen externo */
+}
+
+/* Contenedor de resultados de búsqueda */
+#results-container {
+    display: flex; /* Usar flexbox */
+    flex-wrap: wrap; /* Permitir el ajuste de elementos */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    margin-top: 0px; /* Margen superior */
+}
+
+/* Estilo para cada resultado */
+.resultado {
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    margin: 10px; /* Margen externo */
+    width: 300px; /* Ancho fijo */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 1px; /* Ajusta el margen inferior según sea necesario */
+}
+
+/* Contenedor para información de servicio */
+
+.info-servicio {
+    margin-top: 10px;
+    justify-content: space-between; /* Espaciar elementos */
+}
+   
+.info-dato {
+    display: inline-block;
+
+}
+
+/* Estilo para el mensaje de error */
+.mensaje-error {
+    color: red; /* Color de texto rojo */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    text-align: center; /* Texto centrado */
+}
+
+
+/* Encabezado de pagina*/
+h1 {
+    color:rgb(2, 85, 57); /* Color de texto */
+    font-style: italic; /* Estilo de letra itálica */
+    font-size: 36px; /* Tamaño de fuente */
+    /* Otros estilos según tus preferencias */
+}
+
+
+/* Etiquetas de datos OK*/
+label {  
+    color:rgb(2, 85, 57); /* Color de texto verde */
+   font-size: 18px; /* Tamaño de fuente */
+   font-weight: bold; /* Fuente en negrita */
+   border-radius: 5px; /* Bordes redondeados */
+     
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center; /* Texto centrado */
+    padding: 10px; /* Espaciado interno */
+    color: green; /* Color de texto verde */
+    position: absolute; /* Posición absoluta */
+    bottom: 0; /* Posicionar al fondo de la página */
+    width: 100%; /* Ancho completo */
+}
+
+/* Encabezado de formulario */
+h2 {
+    color:rgb(2, 85, 57);/* Color de texto verde */
+    font-size: 30px; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    text-align: left; /* Alinear texto a la izquierda */
+    position: relative; /* Posición relativa para moverlo */
+      }
+/* Estilo del campo de selección */
+select {
+    padding: 5px; /* Espaciado interno */
+    margin: 5px; /* Margen externo */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 250px; /* Ancho fijo */
+    font-size: 16px; /* Tamaño de fuente */
+    background: #f0f0f0; /* Fondo gris claro */
+    height:30px; /* Altura del campo de selección */
+    
+}
+
+.align-right {
+    text-align: center;
+}
+
+/* Boton agregar al carrito */
+.btn {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Boton agregar al carrito segundo color*/
+.btn:hover {
+    background: #0056b3;
+}
+/* color icono carrito*/
+.cart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* color boton eliminar*/
+.remove-btn {
+    background-color: #ee5a5a;
+}
+
+ /* Color boton pagar*/
+.checkout-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/*segundo Color boton pagar*/
+
+.checkout-btn:hover {
+    background-color: #218838;
+}   
+  
+/*Ajustes carrito*/
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 40px;
+    width: 300px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.item-actions {
+    display: flex;
+    align-items: center;
+}
+.quantity {
+    margin: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo para el contador de sesión */
+.session-timer {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="submit"][name="add"] {
+    background-color: #4CAF50; /* Fondo verde */
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Sin bordes */
+    color: white; /* Texto blanco */
+    padding: 5px; /* Espaciado interno */
+    width: 130px;
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px; /* Margen */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+    position: relative; /* Posición relativa para mover el texto */
+    top: 5px; /* Mueve el texto hacia arriba */
+}
+
+input[type="submit"][name="add"]:hover {
+    background-color: #45a049; /* Fondo más oscuro al pasar por encima */
+}
+nav {
+    display: flex;
+    justify-content: flex-start; /* Alinea a la derecha */
+    align-items: left;       /* Centra verticalmente */
+}
+
+ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;       /* Corrige el padding */
+    margin: 0;        /* Corrige el margin */
+}
+
+li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white;          /* Color del texto */
+    padding: 10px 10px;    /* Relleno dentro del enlace */
+    border: 1px solid #ccc; /* Borde del enlace */
+    border-radius: 5px;    /* Esquinas redondeadas */
+    background-color: #4CAF49; /* Fondo verde */
+}
+
+/* Opcional: estilos al pasar el ratón por encima del enlace */
+a:hover {
+    background-color: #0056b3;
+    border-color: #999;
+}
+
